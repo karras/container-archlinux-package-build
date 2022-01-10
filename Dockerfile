@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.description="Arch Linux container image for build
 LABEL org.opencontainers.image.base.name="docker.io/archlinux/archlinux:base-devel"
 
 # Install build tools
-RUN pacman -Syu --noconfirm git sudo \
+RUN pacman -Syu --noconfirm git gnupg sudo \
     && yes|pacman -Scc
 
 # Create build user with sudo privileges
@@ -15,5 +15,5 @@ RUN useradd -m -s /bin/bash builder \
     && passwd -d builder \
     && echo 'builder ALL=(ALL) ALL' >> /etc/sudoers.d/builder
 
-# Placeholder command
+# Dummy command
 CMD ["/bin/bash"]
