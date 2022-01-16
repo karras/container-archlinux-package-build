@@ -2,7 +2,7 @@
 
 Arch Linux container image for building Arch Linux, especially AUR, packages.
 
-![GitHub](https://github.com/karras/container-archlinux-package-build/workflows/Publish/badge.svg?branch=main)
+[![Publish](https://github.com/karras/container-archlinux-package-build/actions/workflows/publish.yml/badge.svg)](https://github.com/karras/container-archlinux-package-build/actions/workflows/publish.yml)
 
 ## Customizations
 
