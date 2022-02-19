@@ -2,7 +2,7 @@
 
 Arch Linux container image for building Arch Linux, especially AUR, packages.
 
-[![Publish](https://github.com/karras/container-archlinux-package-build/actions/workflows/publish.yml/badge.svg)](https://github.com/karras/container-archlinux-package-build/actions/workflows/publish.yml)
+[![Build & Publish](https://github.com/karras/container-archlinux-package-build/actions/workflows/build-publish.yml/badge.svg)](https://github.com/karras/container-archlinux-package-build/actions/workflows/build-publish.yml)
 
 ## Customizations
 
@@ -21,6 +21,10 @@ podman run \
   --tty \
   ghcr.io/karras/archlinux-package-build
 ```
+
+All available tags can be found in the
+[registry](https://github.com/karras/container-archlinux-package-build/pkgs/container/archlinux-package-build).
+The `latest` tag is updated on a weekly basis each Friday.
 
 ## License
 
