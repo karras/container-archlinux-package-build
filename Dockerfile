@@ -6,8 +6,12 @@ LABEL org.opencontainers.image.title="Arch Linux Package Build"
 LABEL org.opencontainers.image.description="Arch Linux container image for building Arch Linux, especially AUR, packages."
 LABEL org.opencontainers.image.base.name="docker.io/archlinux/archlinux:base-devel"
 
+# Update all packages
+RUN pacman -Syu --noconfirm \
+    && yes|pacman -Scc
+
 # Install build tools
-RUN pacman -Syu --noconfirm git gnupg sudo \
+RUN pacman -S --noconfirm git gnupg sudo \
     && yes|pacman -Scc
 
 # Create build user with sudo privileges
