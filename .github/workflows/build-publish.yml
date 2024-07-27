@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build image
-        run: docker build . --file Dockerfile --tag $IMAGE_NAME
+        run: docker build --ulimit nofile=1024:524288 --file Dockerfile --tag $IMAGE_NAME .
 
       - name: Log in to ghcr.io registry
         if: github.event_name != 'pull_request'
