@@ -4,6 +4,12 @@ Arch Linux container image for building Arch Linux, especially AUR, packages.
 
 [![Build & Publish](https://github.com/karras/container-archlinux-package-build/actions/workflows/build-publish.yml/badge.svg)](https://github.com/karras/container-archlinux-package-build/actions/workflows/build-publish.yml)
 
+## Why
+
+Buliding Arch packages within a container, especially a pipeline, can help
+avoiding unnecessary local dependencies and provide up to date package more
+easily.
+
 ## Customizations
 
 The following customizations are added on top of the Arch Linux base-devel
